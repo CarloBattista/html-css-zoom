@@ -195,14 +195,14 @@ body {
     flex-direction: column;
 }
 
-.container_left .fa-solid{
+.container_left .fa-solid .fa-regular{
     color: #fff;
     font-size: 20px;
 }
 
 .text_action{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 5px;
 }
 
@@ -210,11 +210,45 @@ body {
     margin-left: 10px;
 }
 
-.container_right .fa-solid{
+.container_right .fa-solid,
+.container_right .fa-regular{
     font-size: 13px;
     transition: transform 200ms ease;
 }
 
-.box_action_container:hover .container_right .fa-solid{
+.box_action_container:hover .container_right .fa-solid,
+.box_action_container:hover .container_right .fa-regular{
     transform: rotate(180deg);
+}
+
+#box_action_share_screen{
+    background-color: rgba(9, 229, 24, 0);
+    transition: background-color 200ms ease;
+}
+
+#box_action_share_screen:hover{
+    background-color: rgba(9, 229, 24, .7);
+}
+
+#box_action_share_screen .container_left .fa-share{
+    color: rgba(9, 229, 24, 1);
+    transition: color 200ms ease;
+}
+
+#box_action_share_screen:hover .container_left .fa-share{
+    color: #fff;
+}
+
+.end_call{
+    background-color: rgba(229, 9, 20, 0);
+    color: #e50914;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color, color 200ms ease;
+}
+
+.end_call:hover{
+    background-color: rgba(229, 9, 20, .5);
+    color: #fff;
 }
