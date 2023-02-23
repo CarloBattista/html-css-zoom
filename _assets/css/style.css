@@ -30,3 +30,57 @@ body {
 .bg-lightgrey{
     background-color: #4A4A4A;
 }
+
+.color-text-white{
+    color: #fff;
+}
+
+.color-text-red{
+    color: #e50914;
+}
+
+.color-text-green{
+    color: #09e518;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.j-start{
+    justify-content: flex-start;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.j-end{
+    justify-content: flex-end;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+/* Main */
+
+.main{
+    position: relative;
+    height: 100vh;
+    background-color: red;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background-color: green;
+}
